@@ -1,5 +1,5 @@
-| Week | Milestones | Date | Plan of action | Status |
-|-------------|---------|--------|-----------------| ----- |
+| Week       | Milestones | Date | Plan of action | Status |
+|-------------|---------|-------------|-----------------| ----- |
 |Week 1| Machine Learing Mock interview | 08-30-2023 | <ul><li>Complete understanding of ml and dl algorithms </ul></li> <ul><li> Blog post on deep learning algorithms (Text and vision) | |
 |Week 1 | Leet code - Trees & Graphs | 08-31-2023 | <ul><li>Leetcode daily 4 problems. Target 28 problems</ul></li> <ul><li>blog on Trees and graphs with real life scanerios</ul></li> | |
 |Week 2 | Algorithms and Data structure mock interview | 09-08-2023 | Practice problems. Leetcode daily 4 problems |  | 
