@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[BOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[EOS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": {
+    "type": "Sequence",
+    "normalizers": [
+      {
+        "type": "NFD"
+      },
+      {
+        "type": "StripAccents"
+      },
+      {
+        "type": "Lowercase"
+      }
+    ]
+  },
+  "pre_tokenizer": {
+    "type": "WhitespaceSplit"
+  },
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": [
+      {
+        "SpecialToken": {
+          "id": "[BOS]",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "SpecialToken": {
+          "id": "[EOS]",
+          "type_id": 0
+        }
+      }
+    ],
+    "pair": [
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "B",
+          "type_id": 1
+        }
+      }
+    ],
+    "special_tokens": {
+      "[BOS]": {
+        "id": "[BOS]",
+        "ids": [
+          2
+        ],
+        "tokens": [
+          "[BOS]"
+        ]
+      },
+      "[EOS]": {
+        "id": "[EOS]",
+        "ids": [
+          3
+        ],
+        "tokens": [
+          "[EOS]"
+        ]
+      }
+    }
+  },
+  "decoder": null,
+  "model": {
+    "type": "WordLevel",
+    "vocab": {
+      "[PAD]": 0,
+      "[UNK]": 1,
+      "[BOS]": 2,
+      "[EOS]": 3,
+      "and": 4,
+      "dimczewski": 5,
+      "frauen": 6,
+      "or": 7,
+      "-": 8,
+      "anfrage": 9,
+      "are": 10,
+      "at": 11,
+      "auf": 12,
+      "bevorzugt": 13,
+      "bushy": 14,
+      "cheeks": 15,
+      "depicts": 16,
+      "die": 17,
+      "diesem": 18,
+      "eines": 19,
+      "examining": 20,
+      "facial": 21,
+      "fahndungsmeldungen,": 22,
+      "features,": 23,
+      "find": 24,
+      "finden": 25,
+      "gesichtszugen": 26,
+      "haaren.": 27,
+      "hair": 28,
+      "have": 29,
+      "in": 30,
+      "issued": 31,
+      "junge": 32,
+      "langen": 33,
+      "long": 34,
+      "magistrate's": 35,
+      "missing": 36,
+      "mit": 37,
+      "mitglatten": 38,
+      "modellsitzen.": 39,
+      "notices": 40,
+      "oder": 41,
+      "on": 42,
+      "pages": 43,
+      "prosecutor": 44,
+      "public": 45,
+      "regelmassigen": 46,
+      "regular": 47,
+      "request.": 48,
+      "rosigen": 49,
+      "rubrik": 50,
+      "sie": 51,
+      "sleek": 52,
+      "smooth": 53,
+      "staatsanwalts": 54,
+      "that": 55,
+      "the": 56,
+      "these": 57,
+      "und": 58,
+      "untersuchungsrichter": 59,
+      "usually": 60,
+      "verbreitet": 61,
+      "wangen": 62,
+      "wanted": 63,
+      "wavy,": 64,
+      "welligen": 65,
+      "werden.": 66,
+      "which": 67,
+      "will": 68,
+      "women,": 69,
+      "wriggling.": 70,
+      "you": 71,
+      "young": 72,
+      "zum": 73
+    },
+    "unk_token": "[UNK]"
+  }
+}

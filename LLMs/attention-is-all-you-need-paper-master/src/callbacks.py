@@ -8,7 +8,6 @@ from tokenizers import Tokenizer
 from nltk.translate.bleu_score import corpus_bleu
 
 # Configure Logging
-import wandb
 import logging
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)

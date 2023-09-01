@@ -12,3 +12,5 @@ Transformers vs LSTMs:
 | Bidirectional Context      | Bidirectional attention for better context   | Unidirectional context for each token       |
 | Hyperparameters           | Fewer hyperparameters to tune                | More hyperparameters for tuning            |
 | Applicability             | Highly effective for NLP tasks                | Widely used for various sequence tasks     |
+
+

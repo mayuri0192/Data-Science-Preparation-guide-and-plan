@@ -1,6 +1,5 @@
 import torch
 from utils.custom_enumerator import enumerateWithEstimate
-import wandb
 import copy
 import logging
 
@@ -21,7 +20,7 @@ class Learner:
         self.opt=opt
         self.sched=sched
         self.device=device
-
+        self.GRAD_ACCUMULATION_STEPS=1
         self.cur_step=1
 
         self.best_val_loss=float('inf')
@@ -42,7 +41,7 @@ class Learner:
         self('after_loss')
         if self.model.training:
             self.loss.backward()
-            if self.cur_step % wandb.config.GRAD_ACCUMULATION_STEPS == 0:
+            if self.cur_step % self.GRAD_ACCUMULATION_STEPS == 0:
                 self.opt.step()
                 if self.sched != None:
                     self.sched.step()
