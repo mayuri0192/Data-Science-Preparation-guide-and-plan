@@ -7,7 +7,7 @@ diabetes**
 =====================================
 
 diabetes risk prediction app.mp4
-[diabetes risk prediction](/data%20science%20for%20healthcare/diabetes risk prediction app.mp4)
+[![diabetes risk prediction](/data%20science%20for%20healthcare/diabetes risk prediction image.PNG)](/data%20science%20for%20healthcare/diabetes risk prediction app.mp4)
 ----------
 
 Diabetes Risk Prediction app
