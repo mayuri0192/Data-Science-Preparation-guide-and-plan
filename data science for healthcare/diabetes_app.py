@@ -19,7 +19,7 @@ from sklearn.tree import DecisionTreeClassifier
 # Header
 st.write("""
 # Diabetes Risk Prediction App
-Answer 6 questions to find out if you may be at risk for Type II Diabetes.
+Answer 8 questions to find out if you may be at risk for Type II Diabetes.
 """)
 
 with st.expander("Click for FAQ:"):
@@ -58,7 +58,7 @@ with st.expander("Click to see the Decision Tree:"):
     st.write("""This is how the Diabetes risk prediction is made by this app.""")
     st.image('./Decision Tree Rules.png')
 
-st.write("### Answer the following 6 Questions:")
+st.write("### Answer the following 8 Questions:")
 
 # create the colums to hold user inputs
 col1, col2, col3 = st.columns(3)
