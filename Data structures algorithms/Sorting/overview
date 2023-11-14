@@ -1,0 +1,18 @@
+Sorting
+
+Selection / Bubble sort O(n^2)
+
+| Algorithm |  Complexity | Notes |
+| ------------|--------------|--------|
+| Bubble Sort |worst case complexity : O(n^2)       |Stay away in interview| 
+| Selection Sort | worst case complexity : O(n^2)       |Stay away in interview|
+| Insertion Sort | worst case scenario : O(n^2) | If an array is almost sorted - few elements out of order (array of size million and 5 elems are in order), if used insertion then the only work done is on the 5 elements in the order of O(n). Insertion sort can also be used for smaller sized array.
+| Merge Sort (Divide and Conquer algo)| worst case: O(nlogn) |  Merge sort is stable. If we have duplicate elements, then the order in which these duplicate elem occur should not change in the output sorted array|
+| Quick Sort (Divide and Conquer algo) |Avg  case: O(nlogn), worst case O(n^2) | If we randomize algorithm , where you pick pivot randomly tha garuntees O(nlogn). Never go for deterministic algorithm. + Not Stable|
+| Heap Sort (Transform and Conquer algo) | worst case: O(nlogn))|not Stable | 
+- Quick sort and Heap sort are in-place algos. They don't require auxiliary space for sorting.
+- Merge sort requires auxiliary space O(n)
+- Aux space for in space is O(1)
+- Quick sort - implicit stack space in call stack: O(logn)
+- Quick sort is empirically fastest. - Use when want to have fastest algo. - speed of execution is the requirement. 
+- But if you want to be safe - Use Merge or Heap sort
